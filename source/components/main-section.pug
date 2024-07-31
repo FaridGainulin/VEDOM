@@ -1,0 +1,30 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-bold.font-s-44.text-up
+        span.mark-sky Станьте экспертами 
+        | в области 
+        br.no-br
+        | строительства и ремонта 
+        br.no-br
+        | с франшизой 
+        span.mark-sky «VEDOM»
+      .main-section__sub-title.font-s-24
+        img.main-section__coins(src="images/main-section-coins.png" loading="lazy" width="91" height="82" alt="coins")
+        .main-section__text.font-w-regular.text-up
+          | Узнайте, как получать 
+          span.font-w-bold 410 000 ₽ чистой 
+          br.no-br
+          span.font-w-bold прибыли ежемесячно, 
+          | открыв 
+          br.no-br
+          | собственную компанию по франшизе
+      .main-section__bottom
+        .main-section__bottom-text.font-w-os-regular.font-s-18.text-up Получите подробный план открытия франшизы
+        form.main-section__form(data-feedback-form)
+          input.input.main-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.main-item(type="submit") Получить
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1064" height="795" alt="image")
+

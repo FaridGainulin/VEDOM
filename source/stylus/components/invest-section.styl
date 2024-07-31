@@ -1,0 +1,182 @@
+.invest-section
+  background-image: url('../images/invest-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #EDEDED
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 40px 0 60px 0
+    +above($breakpoints.md)
+      padding 60px 0 80px 0
+    +above($breakpoints.xxl)
+      padding 90px 0 120px 0
+
+  &__line1
+    position: absolute
+    width 100%
+    max-width: 1272px
+    height: auto
+    bottom: 57%;
+    right: -22%;
+    +above($breakpoints.sm)
+      bottom: 40%;
+      right: 20%;
+    +above($breakpoints.md)
+      bottom: 35%;
+      right: 22%;
+    +above($breakpoints.xxl)
+      bottom: 37%;
+      right: 21%;
+
+  &__line2
+    position: absolute
+    width 100%
+    max-width: 1272px
+    height: auto
+    transform: rotatey(180deg);
+    bottom: 81%;
+    right: 11%;
+    +above($breakpoints.sm)
+      bottom: 72%;
+      right: 4%;
+    +above($breakpoints.md)
+      bottom: 68%;
+      right: 5%;
+    +above($breakpoints.xxl)
+      bottom: 68%;
+      right: 5%;
+
+  &__title-icon
+    width 100%
+    max-width 1180px
+    height: auto
+    margin-left -3%
+
+  &__title
+    padding 0 0 20px 0
+    +above($breakpoints.sm)
+      padding 0 0 30px 0
+    +above($breakpoints.md)
+      padding 0 0 70px 0
+    +above($breakpoints.xxl)
+      padding 0 0 90px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content start
+      gap: 10px
+      +above($breakpoints.xxl)
+        column-gap: 20px
+        row-gap: 30px
+
+  &__card
+    width 276px !important
+    height: 198px
+    border-top-right-radius: 5px
+    border-top-left-radius: 5px
+    border-bottom-right-radius: 5px
+    border-bottom-left-radius: 25px
+    background-color #fff
+    display: flex
+    flex-direction: column
+    justify-content space-between
+    padding: 38px 10px 30px 28px
+    +above($breakpoints.sm)
+      height: 145px
+      padding: 15px 10px 20px 15px
+      width 174px !important
+    +above($breakpoints.md)
+      height: 198px
+      padding: 38px 10px 30px 28px
+      width 234px !important
+    +above($breakpoints.xxl)
+      width 276px !important
+      height: 198px
+      padding: 38px 10px 30px 28px
+
+  &__bottom
+    position relative
+    display: flex
+    flex-direction: column
+    margin-top 20px
+    +above($breakpoints.sm)
+      margin-top 60px
+      flex-direction: row
+
+  &__img
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      position: absolute
+      width: 126px;
+      height: auto;
+      top: -212px;
+      right: 38px;
+    +above($breakpoints.md)
+      width 177px
+      top: -300px;
+      right: 62px;
+
+  &__bottom-left
+    background-color #000
+    width 100%
+    max-width: 586px
+    padding 20px 15px 20px 15px
+    display: flex
+    flex-direction: column
+    gap: 20px
+    border-top-left-radius: 15px
+    border-top-right-radius: 15px
+    border-bottom-left-radius: 0
+    border-bottom-right-radius: 0
+    text-align: center
+    +above($breakpoints.sm)
+      padding 30px 10px 30px 30px
+      text-align: start
+      border-top-left-radius: 25px
+      border-top-right-radius: 0
+      border-bottom-left-radius: 25px
+      border-bottom-right-radius: 0
+    +above($breakpoints.xxl)
+      gap: 29px
+      padding 50px 10px 60px 52px
+
+  &__bottom-right
+    backdrop-filter: blur(20px);
+    background: linear-gradient(209.25deg, rgb(10, 9, 44) 17.471%,rgb(17, 35, 80) 84.355%),rgb(255, 255, 255)
+    width 100%
+    max-width: 586px
+    padding 20px 15px 20px 15px
+    display: flex
+    flex-direction: column
+    gap: 20px
+    border-top-left-radius: 0
+    border-top-right-radius: 0
+    border-bottom-left-radius: 15px
+    border-bottom-right-radius: 15px
+    +above($breakpoints.sm)
+      padding 30px 15px 30px 15px
+      border-top-left-radius: 0
+      border-top-right-radius: 25px
+      border-bottom-left-radius: 0
+      border-bottom-right-radius: 25px
+    +above($breakpoints.xxl)
+      gap: 30px
+      padding 60px 102px 60px 47px
+
+  &__logo-name
+    width 128px
+    height: auto
+    margin 0 auto
+
+.color-sky
+  color: #51A1FF
+
+

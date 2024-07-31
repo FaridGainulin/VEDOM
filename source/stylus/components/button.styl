@@ -1,0 +1,61 @@
+.btn
+  height: 50px
+  width 100%
+  user-select: none
+  position: relative
+  display: flex;
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  color: $color-white
+  border-radius: 13px
+  text-transform: uppercase
+  background: linear-gradient(270.00deg, rgb(25, 83, 254) 0%,rgb(81, 161, 255) 100%)
+  // background: $color-yellow
+  // box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.25)
+  font-family: "Cygre-Bold"
+  font-weight: 700
+  font-size: 15px
+  line-height: 140%
+  transition transform 0.5s, top 0.8s
+  +above($breakpoints.sm)
+    font-size: 17px;
+    height: 55px;
+  +above($breakpoints.xxl)
+    font-size: 20px;
+    height: 60px
+
+  &:hover
+    transform: scale(1.02)
+
+  &:active
+    top: 3px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation
+      0%
+          left: -150%
+      100% 
+          left: 250%
+
+  &--call-me
+    font-size: 14px
+    width 175px
+    text-transform: lowercase
+    +above($breakpoints.md)
+      height: 42px
+      font-size: 14px
+
+  &--bg-black
+    background: #1D1D1B

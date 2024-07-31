@@ -1,0 +1,122 @@
+.city-section
+  background-image: url('../images/city-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #0D142F
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 40px 0 50px 0
+    +above($breakpoints.md)
+      padding 80px 0 100px 0
+    +above($breakpoints.xxl)
+      padding 117px 0 155px 0
+
+  &__img
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      position: absolute
+      width: auto
+      height: 100%;
+      bottom: 0;
+      right: -22%;
+    +above($breakpoints.xxxl)
+      right: -20vw;
+    +above($breakpoints.xxxxxxl)
+      right: -32vw;
+    +above($breakpoints.xxxxxxxl)
+      display: none
+
+
+  &__title,
+  &__sub-title
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+
+  &__title
+    padding 14px 0 20px 0
+    +above($breakpoints.sm)
+      padding 14px 0 20px 0
+    +above($breakpoints.md)
+      padding 14px 0 30px 0
+    +above($breakpoints.xxl)
+      padding 14px 0 30px 0
+
+  &__line
+    width 100%
+    max-width: 151px
+    height: 4px
+    background-color #fff
+    border-radius: 4px
+    margin 0 auto
+    +above($breakpoints.sm)
+      margin 0
+
+  &__sub-title
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 20px 0 30px 0
+    +above($breakpoints.md)
+      padding 30px 0 50px 0
+    +above($breakpoints.xxl)
+      padding 30px 0 74px 0
+
+  &__bottom
+    width 100%
+    max-width: 493px
+    border: 1px solid rgba(214, 214, 214, 0.15)
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.15)
+    +above($breakpoints.sm)
+      max-width: 425px
+    +above($breakpoints.md)
+      max-width: 818px
+
+  &__bottom-text
+    text-align: center
+    padding 20px 0 20px 0
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background: rgb(32, 39, 58)
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      justify-content space-between
+      text-align: start
+      padding 25px 35px 25px 34px
+
+  &__icon
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      width 37px
+      height: 37px
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content center
+    gap: 8px
+    padding: 19px 0 20px 0
+    +above($breakpoints.sm)
+      padding: 19px 0 24px 34px
+      align-items: flex-start
+    +above($breakpoints.md)
+      justify-content flex-start
+      flex-direction: row
+
+.city-item
+  width 245px !important
+  +above($breakpoints.sm)
+    width 355px !important
+  +above($breakpoints.md)
+    width 245px !important
+
+

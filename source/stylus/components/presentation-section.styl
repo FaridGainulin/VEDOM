@@ -1,0 +1,62 @@
+.presentation-section
+  background-image: url('../images/presentation-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #fff
+
+  &__container
+    position relative
+    padding 20px 0 0 0
+    +above($breakpoints.sm)
+      padding 40px 0 0 0
+    +above($breakpoints.md)
+      padding 80px 0 0 0
+    +above($breakpoints.xxl)
+      padding 96px 0 0 0
+
+  &__bottom
+    padding-bottom 20px
+    +above($breakpoints.sm)
+      padding-bottom 80px
+    +above($breakpoints.md)
+      padding-bottom 150px
+    +above($breakpoints.xxl)
+      padding-bottom 224px
+
+  &__title
+    text-align: center
+    color: #0B122C
+    padding-bottom 20px
+    +above($breakpoints.sm)
+      padding-bottom 36px
+    +above($breakpoints.md)
+      padding-bottom 36px
+    +above($breakpoints.xxl)
+      text-align: start
+      padding-bottom 36px
+
+  &__cards
+    position relative
+
+  &__card
+    width 280px !important
+    +above($breakpoints.sm)
+      width 357px !important
+    +above($breakpoints.md)
+      width 314px !important
+    +above($breakpoints.xxl)
+      width 380px !important
+
+  &__img
+    width 280px
+    height: auto
+    border-radius: 18px
+    +above($breakpoints.sm)
+      width 357px
+    +above($breakpoints.md)
+      width 314px
+    +above($breakpoints.xxl)
+      width 380px
+
+

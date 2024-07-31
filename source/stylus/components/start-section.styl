@@ -1,0 +1,117 @@
+.start-section
+  background-image: url('../images/start-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #1A244F
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 50px 0 50px 0
+    +above($breakpoints.md)
+      padding 120px 0 120px 0
+    +above($breakpoints.xxl)
+      padding 160px 0 163px 0
+
+  &__sub-title
+    padding 16px 0 20px 0
+    +above($breakpoints.sm)
+      padding 16px 0 40px 0
+    +above($breakpoints.md)
+      padding 16px 0 70px 0
+    +above($breakpoints.xxl)
+      padding 16px 0 94px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      justify-content center
+      gap: 10px
+    +above($breakpoints.xxl)
+      gap: 20px
+
+  &__card
+    width 300px !important
+    background-color #fff
+    border-radius: 30px
+    padding 20px 20px 20px 20px
+    color: #1D1D1B
+    +above($breakpoints.sm)
+      width 235px !important
+    +above($breakpoints.md)
+      padding 31px 31px 26px 31px
+      width 315px !important
+    +above($breakpoints.xxl)
+      width 380px !important
+
+  &__card-title-1
+    display: flex
+    justify-content center
+    align-items: center
+    height: 60px
+    background-color #EEEEEE
+    border-radius: 30px
+    margin-bottom 30px
+    +above($breakpoints.xxl)
+      margin-bottom 60px
+
+  &__card-title-2
+    display: flex
+    justify-content center
+    align-items: center
+    height: 60px
+    background-color #51A1FF
+    color: #fff
+    border-radius: 30px
+    margin-bottom 30px
+    +above($breakpoints.xxl)
+      margin-bottom 60px
+
+  &__card-title-3
+    display: flex
+    justify-content center
+    align-items: center
+    height: 60px
+    background-color #1953FE
+    color: #fff
+    border-radius: 30px
+    margin-bottom 30px
+    +above($breakpoints.xxl)
+      margin-bottom 60px
+
+  &__card-sub-title
+    padding: 10px 0 30px 0
+    line-height: 100%
+
+  &__card-line
+    width 94px
+    height: 3px
+    background-color #7F90FF
+    margin 0 auto
+
+  &__card-text
+    padding: 20px 0 30px 0
+    color: #7379A9
+    +above($breakpoints.xxl)
+      padding: 34px 0 52px 0
+
+  &__img
+    width 300px
+    height: auto
+    position: absolute
+    z-index -1
+    bottom: 0
+    left: -200px
+    +above($breakpoints.sm)
+      width 340px
+      left: -230px
+    +above($breakpoints.md)
+      width 401px
+      left: -280px
+    +above($breakpoints.xxl)
+      width 501px
+      left: -350px

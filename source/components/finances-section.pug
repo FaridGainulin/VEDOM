@@ -1,0 +1,72 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      .finances-section__header
+        .finances-section__line
+        h2.finances-section__title.font-s-44.font-w-bold.text-up
+          | Изучите
+          br
+          | основные
+          br
+          | показатели
+          br
+          | бизнеса
+        img.finances-section__header-img(src="images/finances-section-header-img.png" loading="lazy" width="666" height="461" alt="image")
+        img.finances-section__header-icon(src="images/finances-section-header-icon.png" loading="lazy" width="195" height="179" alt="icon")
+      .finances-section__content
+        .finances-section__item
+          img.finances-section__item-icon(src="images/finances-section-item-icon.svg" loading="lazy" width="40" height="40" alt="icon")
+          .font-s-20.font-w-regular
+            span.font-w-bold
+              | Сотрудничая 
+              br.no-br-md
+              | с нами, 
+            | вы можете 
+            br.no-br
+            | рассчитывать на 
+            br.no-br-md
+            | подобные 
+            br.no-br-md
+            | показатели:
+        .swiper-finances
+          .finances-section__cards.swiper-wrapper
+            .finances-section__card.swiper-slide
+              img.finances-section__card-icon(src="images/finances-section-card-icon1.svg" loading="lazy" width="42" height="42" alt="icon")
+              .finances-section__card-title.font-w-bold.font-s-26 1 месяц
+              .font-w-os-regular.font-s-20 понадобится <br> на запуск
+            .finances-section__card.swiper-slide
+              img.finances-section__card-icon(src="images/finances-section-card-icon2.svg" loading="lazy" width="42" height="42" alt="icon")
+              .finances-section__card-title.font-w-bold.font-s-26 11%
+              .font-w-os-regular.font-s-20 рентабельность <br> по чистой прибыли
+            .finances-section__card.swiper-slide
+              img.finances-section__card-icon(src="images/finances-section-card-icon3.svg" loading="lazy" width="42" height="42" alt="icon")
+              .finances-section__card-title.font-w-bold.font-s-26 3 720 000 руб
+              .font-w-os-regular.font-s-20 размер <br> ежемесячной <br> выручки
+            .finances-section__card.swiper-slide
+              img.finances-section__card-icon(src="images/finances-section-card-icon4.svg" loading="lazy" width="42" height="42" alt="icon")
+              .finances-section__card-title.font-w-bold.font-s-26 5 месяцев
+              .font-w-os-regular.font-s-20 средний срок <br> окупаемости
+            .finances-section__card.swiper-slide
+              img.finances-section__card-icon(src="images/finances-section-card-icon5.svg" loading="lazy" width="42" height="42" alt="icon")
+              .finances-section__card-title.font-w-bold.font-s-26 540 000 рублей
+              .font-w-os-regular.font-s-20 минимальный <br> размер вложений
+            .finances-section__card.swiper-slide
+              img.finances-section__card-icon(src="images/finances-section-card-icon6.svg" loading="lazy" width="42" height="42" alt="icon")
+              .finances-section__card-title.font-w-bold.font-s-26 410 000 руб
+              .font-w-os-regular.font-s-20 размер <br> ежемесячной <br> прибыли
+          .finances-pagination.swiper-progress-finances
+      .finances-section__bottom
+        .finances-section__bottom-inner
+          img.finances-section__bottom-icon(src="images/finances-section-bottom-icon.png" loading="lazy" width="51" height="45" alt="icon")
+          .font-w-os-regular.font-s-18
+            | Хотите получить 
+            span.font-w-os-bold детальные цифры <br class="no-br"> для вашего города 
+            | и под ваш бюджет?
+        .finances-section__bottom-title.text-up.font-w-bold.font-s-32
+          | Скачайте финансовую модель
+          br
+          span.mark-blue франшизы «VEDOM»
+        form.finances-section__bottom-form(data-feedback-form)
+          input.input.finances-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.finances-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.finances-item(type="submit") ПОлучить

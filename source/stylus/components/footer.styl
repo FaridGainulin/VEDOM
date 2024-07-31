@@ -1,0 +1,69 @@
+.footer
+  background-color #fff
+
+  &__container
+    padding 15px 0 15px 0
+    display: flex
+    flex-direction: column
+    gap: 10px
+    align-items: center
+    +above($breakpoints.sm)
+      padding 27px 0 22px 0
+      flex-direction: row
+      justify-content space-between
+
+  &__left
+    display: flex
+    flex-direction: column
+    align-items: center
+    +above($breakpoints.sm)
+      align-items: flex-end
+      flex-direction: row
+      gap: 73px
+
+  &__text
+    color: #353535
+    display: flex
+    flex-direction: column
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      display: block
+
+  &__privacy
+    text-decoration: underline
+    color: #838383
+
+  &__logo
+    width 100px
+    height: auto
+    +above($breakpoints.sm)
+      width 148px
+
+  &__connection
+    padding: 0 0 0 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #0a0510;
+    border-radius: 30px;
+    gap: 10px;
+    width: 100%;
+    max-width: 163px;
+    height: 25px;
+    +above($breakpoints.sm)
+      padding: 0 0 0 14px;
+      gap: 23px
+      max-width: 280px
+      height: 56px
+
+  &__icon
+    cursor pointer
+    width 19px
+    height: 16px
+    +above($breakpoints.sm)
+      width 38px
+      height: 33px
+
+
